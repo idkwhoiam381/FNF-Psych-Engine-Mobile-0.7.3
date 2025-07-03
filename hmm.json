@@ -20,22 +20,17 @@
     {
       "name": "flixel-addons",
       "type": "haxelib",
-      "version": "2.11.0"
+      "version": "3.2.1"
     },
     {
       "name": "flixel-ui",
       "type": "haxelib",
-      "version": "2.3.3"
+      "version": "2.5.0"
     },
     {
       "name": "hxcpp",
       "type": "haxelib",
-      "version": "4.2.1"
-    },
-    {
-      "name": "hxjsonast",
-      "type": "haxelib",
-      "version": "1.0.1"
+      "version": "4.3.2"
     },
     {
       "name": "tjson",
@@ -45,7 +40,7 @@
     {
       "name": "format",
       "type": "haxelib",
-      "version": "3.5.0"
+      "version": "3.8.0"
     },
     {
       "name": "hxp",
