@@ -64,7 +64,7 @@ jobs:
           haxelib run lime config ANDROID_SETUP true
 
       - name: Setup SScript (First Run)
-        run: echo "N" | haxelib run lime build ${{ inputs.buildArgs }
+        run: echo "N" | haxelib run lime build ${{ inputs.buildArgs }}
         continue-on-error: true
 
       - name: Compile Project (Second Run)
