@@ -7,13 +7,15 @@
     },
     {
       "name": "lime",
-      "type": "haxelib",
-      "version": "7.9.0"
+      "type": "git",
+      "ref": "master",
+      "url": "https://github.com/JuniorNovoa1/lime-android-git"
     },
     {
       "name": "flixel",
-      "type": "haxelib",
-      "version": "4.11.0"
+      "type": "git",
+      "ref": "master",
+      "url": "https://github.com/JuniorNovoa1/flixel-android-git"
     },
     {
       "name": "flixel-addons",
@@ -66,13 +68,13 @@
       "name": "hxCodec",
       "type": "git",
       "ref": "main",
-      "url": "https://github.com/polybiusproxy/hxCodec"
+      "url": "https://github.com/JuniorNovoa1/hxCodec-Psych-0.7.3"
     },
     {
       "name": "SScript",
       "type": "git",
       "ref": "master",
-      "url": "https://github.com/raphaffzyz/SScript-7.7.0-PE"
+      "url": "https://github.com/JuniorNovoa1/SScript-7.7.0"
     },
     {
       "name": "hxdiscord_rpc",
@@ -82,9 +84,8 @@
     },
     {
       "name": "linc_luajit",
-      "type": "git",
-      "ref": "master",
-      "url": "https://github.com/AndreiRudenko/linc_luajit"
+      "type": "haxelib",
+      "version": "1.2.0"
     },
     {
       "name": "flxanimate",

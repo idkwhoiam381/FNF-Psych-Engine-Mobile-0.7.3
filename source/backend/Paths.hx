@@ -560,7 +560,7 @@ class Paths
 			#end
 			
 		}
-		return #if mobile Sys.getCwd() + #end 'mods/' + key;
+		return #if android StorageUtil.getExternalStorageDirectory() + #else Sys.getCwd() + #end 'mods/' + key;
 	}
 
 	#if linux

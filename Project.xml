@@ -2,7 +2,7 @@
 <project>
 	<!-- _________________________ Application Settings _________________________ -->
 
-	<app title="Friday Night Funkin
+	<app title="PsychEngine 0.7.3 (JR VER)" file="PsychEngine 0.7.3 (JR VER)" packageName="com.juniornovoa.psychfixed" package="com.juniornovoa.psychfixed" main="Main" company="JuniorNovoa"/>
 	<set name="APP_ID" value="0x0100f6c013bbc000" />
 	<haxedef name="LINC_LUA_RELATIVE_DYNAMIC_LIB"/> <!-- stable luas PUT AFTER FIRST LINE WITH APP NAME AND ETC -->
 	<app preloader="flixel.system.FlxPreloader" />
@@ -47,10 +47,6 @@
 	<set name="BUILD_DIR" value="export/32bit" if="32bits" />
 
 	<classpath name="source" />
-	<!-- Adicionado para incluir os caminhos das bibliotecas dentro de 'source' -->
-	<classpath name="source/flixel" />
-	<classpath name="source/lime" />
-	<classpath name="source/openfl" />
 
 	<!-- __________________________ Game Assets & Etc. __________________________ -->
 

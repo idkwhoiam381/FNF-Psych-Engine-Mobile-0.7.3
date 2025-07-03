@@ -24,22 +24,24 @@ package mobile.backend;
 
 /**
  * A storage class for mobile.
- * @author Karim Akra and Lily Ross (mcagabe19)
+ * @author Karim Akra and Homura Akemi (HomuHomu833)
  */
 class StorageUtil
 {
 	#if sys
 	public static function getStorageDirectory():String
-		return #if android haxe.io.Path.addTrailingSlash(AndroidContext.getExternalFilesDir()) #elseif ios lime.system.System.documentsDirectory #else Sys.getCwd() #end;
+		return #if android StorageUtil.getExternalStorageDirectory() #elseif ios lime.system.System.documentsDirectory #else Sys.getCwd() #end;
 
 	public static function saveContent(fileName:String, fileData:String, ?alert:Bool = true):Void
 	{
+		final folder:String = #if android StorageUtil.getExternalStorageDirectory() + #else Sys.getCwd() + #end 'saves/';
+
 		try
 		{
-			if (!FileSystem.exists('saves'))
-				FileSystem.createDirectory('saves');
+			if (!FileSystem.exists(folder))
+ 				FileSystem.createDirectory(folder);
 
-			File.saveContent('saves/$fileName', fileData);
+			File.saveContent('$folder$fileName', fileData);
 			if (alert)
 				CoolUtil.showPopUp('$fileName has been saved.', "Success!");
 		}
@@ -51,6 +53,10 @@ class StorageUtil
 	}
 
 	#if android
+	// always force path due to haxe
+	public static function getExternalStorageDirectory():String
+		return '/sdcard/.PsychEngine073jrFIX/';
+
 	public static function requestPermissions():Void
 	{
 		if (AndroidVersion.SDK_INT >= AndroidVersionCode.TIRAMISU)
@@ -76,6 +82,17 @@ class StorageUtil
 		catch (e:Dynamic)
 		{
 			CoolUtil.showPopUp('Please create directory to\n' + StorageUtil.getStorageDirectory() + '\nPress OK to close the game', 'Error!');
+			lime.system.System.exit(1);
+		}
+
+		try
+		{
+			if (!FileSystem.exists(StorageUtil.getExternalStorageDirectory() + 'mods'))
+				FileSystem.createDirectory(StorageUtil.getExternalStorageDirectory() + 'mods');
+		}
+		catch (e:Dynamic)
+		{
+			CoolUtil.showPopUp('Please create directory to\n' + StorageUtil.getExternalStorageDirectory() + '\nPress OK to close the game', 'Error!');
 			lime.system.System.exit(1);
 		}
 	}
