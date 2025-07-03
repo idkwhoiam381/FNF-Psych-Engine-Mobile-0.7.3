@@ -3,7 +3,7 @@
     {
       "name": "openfl",
       "type": "haxelib",
-      "version": "9.1.0"
+      "version": "9.2.2"
     },
     {
       "name": "lime",
@@ -68,8 +68,8 @@
     {
       "name": "linc_luajit",
       "type": "git",
-      "ref": "master",
-      "url": "https://github.com/AndreiRudenko/linc_luajit"
+      "ref": "main",
+      "url": "https://github.com/JuniorNovoa1/linc_luajit-android-git"
     },
     {
       "name": "flxanimate",
