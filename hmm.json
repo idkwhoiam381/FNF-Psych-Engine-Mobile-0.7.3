@@ -31,7 +31,7 @@
       "name": "hxcpp",
       "type": "git",
       "ref": "main",
-      "version": "https://github.com/JuniorNovoa1/hxcpp-android"
+      "url": "https://github.com/JuniorNovoa1/hxcpp-android"
     },
     {
       "name": "tjson",
