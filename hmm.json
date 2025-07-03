@@ -8,13 +8,13 @@
     {
       "name": "lime",
       "type": "git",
-      "ref": "master",
+      "ref": "main",
       "url": "https://github.com/JuniorNovoa1/lime-android-git"
     },
     {
       "name": "flixel",
       "type": "git",
-      "ref": "master",
+      "ref": "main",
       "url": "https://github.com/JuniorNovoa1/flixel-android-git"
     },
     {
@@ -36,17 +36,6 @@
       "name": "hxjsonast",
       "type": "haxelib",
       "version": "1.0.1"
-    },
-    {
-      "name": "hscript",
-      "type": "haxelib",
-      "version": "2.4.0"
-    },
-    {
-      "name": "hscript-ex",
-      "type": "git",
-      "ref": "master",
-      "url": "https://github.com/ianharrigan/hscript-ex"
     },
     {
       "name": "tjson",
@@ -73,7 +62,7 @@
     {
       "name": "SScript",
       "type": "git",
-      "ref": "master",
+      "ref": "main",
       "url": "https://github.com/JuniorNovoa1/SScript-7.7.0"
     },
     {
