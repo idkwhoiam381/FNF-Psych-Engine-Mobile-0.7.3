@@ -9,7 +9,7 @@ jobs:
       matrix:
         include:
           - name: Android
-            os: ubuntu-24.04
+            os: ubuntu-22.04
             buildArgs: "android"
             artifactName: androidBuild
             artifactPath: "export/release/android/bin/app/build/outputs/apk/release/*.apk"
